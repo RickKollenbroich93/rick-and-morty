@@ -13,6 +13,8 @@
   --font-primary: 'Creepster', sans-serif;
   --yellow-prim: #ecee66;
   --green-prim: #48ff00;
+  --blue-prim: rgb(0, 238, 255);
+  --cardBackground: #3f3f3f;
 }
 h1 {
   font-family: var(--Newfont);
@@ -24,14 +26,69 @@ h1 {
     5px -5px 0 var(--yellow-prim), -5px 5px 0 var(--yellow-prim),
     5px 5px 0 var(--yellow-prim), 8px 15px 20px var(--green-prim);
 }
-p {
+.h2 {
+  font-family: var(--Newfont);
+  font-size: 2.5rem;
+  color: rgb(0, 238, 255);
+  font-weight: -50;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000, -5px -5px 0 var(--yellow-prim),
+    5px -5px 0 var(--yellow-prim), -5px 5px 0 var(--yellow-prim),
+    5px 5px 0 var(--yellow-prim), 8px 15px 20px var(--green-prim);
+}
+.h3 {
+  color: rgb(0, 238, 255);
+  letter-spacing: 0.2em;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 var(--yellow-prim),
+    -1px 1px 0 var(--yellow-prim), 1px 1px 0 var(--yellow-prim),
+    1px 1px 2px var(--green-prim);
+}
+.mainWrapper {
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+}
+input:focus {
+  outline-color: var(--blue-prim);
+}
+
+.searchbar {
   font-family: var(--font-primary);
+  background-color: white;
+  font-size: 2rem;
+  border-color: var(--yellow-prim);
+  box-shadow: 1px 1px 2px var(--green-prim);
+}
+.cardWrapper {
+  display: flex;
+  max-width: 720px;
+  border-radius: 20px;
+  gap: 3rem;
+  border: 3px solid var(--cardBackground);
+  background-color: var(--cardBackground);
+}
+.cardWrapper:hover {
+  border-radius: 20px;
+  border: 3px solid var(--blue-prim);
+}
+.characterImg {
+  border-radius: 20px;
+}
+p {
+  /* font-family: var(--Newfont); */
+  color: var(--blue-prim);
+  letter-spacing: 0.2em;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 var(--yellow-prim),
+    -1px 1px 0 var(--yellow-prim), 1px 1px 0 var(--yellow-prim),
+    1px 1px 2px var(--green-prim);
+}
+body {
+  background-color: rgb(32, 32, 32);
+  background-image: url(src/assets/background.jpeg);
+  background-size: cover;
 }
 .headerSpan {
   font-size: 3rem;
-}
-.searchbar {
-  font-family: var(--font-primary);
 }
 
 #app {
