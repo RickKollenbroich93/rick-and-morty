@@ -1,3 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: rick;
+  src: url(/swiftyfont/get_schwifty\ 2.ttf);
+}
+:root {
+  --Newfont: 'rick', sans-serif;
+  --font-primary: 'Creepster', sans-serif;
+  --yellow-prim: #ecee66;
+  --green-prim: #48ff00;
+}
+h1 {
+  font-family: var(--Newfont);
+  font-size: 6rem;
+  color: rgb(0, 238, 255);
+  font-weight: -50;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000, -5px -5px 0 var(--yellow-prim),
+    5px -5px 0 var(--yellow-prim), -5px 5px 0 var(--yellow-prim),
+    5px 5px 0 var(--yellow-prim), 8px 15px 20px var(--green-prim);
+}
+p {
+  font-family: var(--font-primary);
+}
+.headerSpan {
+  font-size: 3rem;
+}
+.searchbar {
+  font-family: var(--font-primary);
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
