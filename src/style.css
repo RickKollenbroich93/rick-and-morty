@@ -58,6 +58,7 @@ body {
   background-color: rgb(32, 32, 32);
   background-image: url(src/assets/background.jpeg);
   background-size: cover;
+  margin: 0;
 }
 .headerSpan {
   font-size: 3rem;
@@ -74,5 +75,4 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
