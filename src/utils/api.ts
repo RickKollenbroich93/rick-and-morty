@@ -4,8 +4,10 @@ import type { allCharactersApi, Character } from '../types';
 
 //--------------- Using an API ---------------
 
-export async function getCharacters(): Promise<Character[]> {
-  const response = await fetch('https://rickandmortyapi.com/api/character');
+export async function getCharacters(name?: string): Promise<Character[]> {
+  const response = await fetch(
+    `https://rickandmortyapi.com/api/character/?name=${name ? name : ''}`
+  );
   const data: allCharactersApi = await response.json();
   const characters = data.results;
   console.log(characters);
