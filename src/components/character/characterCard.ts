@@ -26,8 +26,8 @@ export function characterCard({
         childElements: [
           createElement('h3', { innerText: name, className: styles.h3 }),
           createElement('p', {
-            innerText:
-              'Status: ' + (status === 'Alive' ? '💚' : '☠️') + `${status}`,
+            innerText: `${status === 'Alive' ? '💚' : '☠️'} ${status}`,
+            className: status === 'Dead' ? styles.dead : '',
           }),
           createElement('p', {
             innerText: 'Species: ' + species,

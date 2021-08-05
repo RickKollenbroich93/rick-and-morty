@@ -9,6 +9,9 @@
 input:focus {
   outline-color: var(--blue-prim);
 }
+.dead {
+  color: rgb(255, 0, 0);
+}
 .cardWrapper {
   display: flex;
   max-width: 720px;
