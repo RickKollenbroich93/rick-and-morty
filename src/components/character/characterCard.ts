@@ -1,6 +1,10 @@
+//--------------- Import ---------------
+
 import styles from './characterCard.module.css';
 import type { Character } from '../../types';
 import { createElement } from '../../utils/createElement';
+
+//--------------- Create an characterCard with the right typ ---------------
 
 export function characterCard({
   image,
@@ -8,6 +12,7 @@ export function characterCard({
   status,
   species,
   location,
+  origin,
 }: Character): HTMLElement {
   const character = createElement('div', {
     className: styles.cardWrapper,
@@ -21,8 +26,8 @@ export function characterCard({
         childElements: [
           createElement('h3', { innerText: name, className: styles.h3 }),
           createElement('p', {
-            innerText:
-              'Status: ' + (status === 'Alive' ? '💚' : '☠️') + `${status}`,
+            innerText: `${status === 'Alive' ? '💚' : '☠️'} ${status}`,
+            className: status === 'Dead' ? styles.dead : '',
           }),
           createElement('p', {
             innerText: 'Species: ' + species,
@@ -31,7 +36,7 @@ export function characterCard({
             innerText: 'Location: ' + location,
           }),
           createElement('p', {
-            innerText: 'First seen in: NOT SO EASY',
+            innerText: 'Origin: ' + origin,
           }),
         ],
       }),
