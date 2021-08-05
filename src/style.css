@@ -1,8 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: rick;
+  src: url(/swiftyfont/get_schwifty\ 2.ttf);
+}
+:root {
+  --Newfont: 'rick', sans-serif;
+  --font-primary: 'Creepster', sans-serif;
+  --yellow-prim: #ecee66;
+  --green-prim: #48ff00;
+  --blue-prim: rgb(0, 238, 255);
+  --cardBackground: #333;
+}
+h1 {
+  font-family: var(--Newfont);
+  font-size: 6rem;
+  color: rgb(0, 238, 255);
+  font-weight: -50;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000, -5px -5px 0 var(--yellow-prim),
+    5px -5px 0 var(--yellow-prim), -5px 5px 0 var(--yellow-prim),
+    5px 5px 0 var(--yellow-prim), 8px 15px 20px var(--green-prim);
+}
+.h2 {
+  font-family: var(--font-primary);
+  font-size: 2.5rem;
+  color: rgb(0, 238, 255);
+  font-weight: -50;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000, -5px -5px 0 var(--yellow-prim),
+    5px -5px 0 var(--yellow-prim), -5px 5px 0 var(--yellow-prim),
+    5px 5px 0 var(--yellow-prim), 8px 15px 20px var(--green-prim);
+}
+.searchbar {
+  font-family: var(--font-primary);
+  background-color: white;
+  font-size: 2rem;
+  border-color: var(--yellow-prim);
+  box-shadow: 1px 1px 2px var(--green-prim);
+}
+@media only screen and (max-width: 600px) {
+  .headerSpan::before {
+    content: '\A';
+    white-space: pre;
+  }
+  .headerSpan::after {
+    content: '\A';
+    white-space: pre;
+  }
+}
+
+body {
+  background-color: rgb(32, 32, 32);
+  background-image: url(src/assets/background.jpeg);
+  background-size: cover;
+  margin: 0;
+}
+.headerSpan {
+  font-size: 3rem;
+}
+.mainWrapper {
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }

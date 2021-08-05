@@ -1,0 +1,48 @@
+.h3 {
+  text-align: left;
+  color: rgb(0, 238, 255);
+  letter-spacing: 0.2em;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 var(--yellow-prim),
+    -1px 1px 0 var(--yellow-prim), 1px 1px 0 var(--yellow-prim),
+    1px 1px 2px var(--green-prim);
+}
+input:focus {
+  outline-color: var(--blue-prim);
+}
+.cardWrapper {
+  display: flex;
+  max-width: 720px;
+  border-radius: 20px;
+  gap: 3rem;
+  border: 3px solid var(--cardBackground);
+  background-color: var(--cardBackground);
+}
+
+@media only screen and (max-width: 600px) {
+  .cardWrapper {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 3rem;
+    border: 3px solid var(--cardBackground);
+    background-color: var(--cardBackground);
+  }
+  .textWrapper {
+    padding-left: 1rem;
+  }
+}
+.cardWrapper:hover {
+  border-radius: 20px;
+  border: 3px solid var(--blue-prim);
+}
+.characterImg {
+  border-radius: 20px;
+}
+p {
+  color: var(--blue-prim);
+  text-align: left;
+  letter-spacing: 0.2em;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 var(--yellow-prim),
+    -1px 1px 0 var(--yellow-prim), 1px 1px 0 var(--yellow-prim),
+    1px 1px 2px var(--green-prim);
+}
