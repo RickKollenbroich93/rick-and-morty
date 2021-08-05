@@ -57,8 +57,8 @@ h1 {
 body {
   background-color: rgb(32, 32, 32);
   background-image: url(src/assets/background.jpeg);
-  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   height: 100%;
   margin: 0;
 }
